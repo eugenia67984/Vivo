@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST - App VIVO</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ff9cb3, #4b6cb7);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .post-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(15, 15, 15, 0.3);
+            text-align: center;
+            width: 80%;
+        }
+
+        .topic-link {
+            display: block;
+            color: #4b6cb7;
+            font-size: 18px;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+
+        .topic-link:hover {
+            text-decoration: underline;
+        }
+
+        .post-section {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="post-container">
+        <h2>Argomenti</h2>
+        <a href="#musica" class="topic-link">Musica</a>
+        <a href="#film" class="topic-link">Film</a>
+        <a href="#libri" class="topic-link">Libri</a>
+    
+        <div class="post-section" id="musica">
+            <h3>Musica</h3>
+            
+            <a href="musica.html">Vai a Musica</a>
+        </div>
+
+        <div class="post-section" id="film">
+            <h3>Film</h3>
+            
+            <a href="film.html">Vai a Film</a>
+        </div>
+
+        <div class="post-section" id="libri">
+            <h3>Libri</h3>
+            
+            <a href="libri.html">Vai a Libri</a>
+        </div>
+        
+    </div>
+</body>
+
+</html>

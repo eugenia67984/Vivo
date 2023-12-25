@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amici - App VIVO</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ff9cb3, #4b6cb7);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .friends-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(15, 15, 15, 0.3);
+            text-align: center;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        .friend-request-box {
+            background: linear-gradient(to right, #ff9cb3, #4b6cb7);
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .chat-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(15, 15, 15, 0.3);
+            text-align: center;
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="friends-container">
+        <h2>Amici</h2>
+
+        <div class="friend-request-box">
+            <p>Richieste di Amicizia:</p>
+            <ul id="friend-requests">
+            </ul>
+        </div>
+
+        <div>
+            <p>Amici:</p>
+            <ul id="friend-list">
+            </ul>
+        </div>
+    </div>
+
+    <div class="chat-container">
+        <h2>Chat</h2>
+    <div>
+    <ul id="chat-list">           
+            </ul>
+        </div>
+    </div>
+
+    <script>
+    
+    </script>
+</body>
+</html>

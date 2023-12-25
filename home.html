@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - App VIVO</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .post {
+            background: linear-gradient(to bottom, #ffb6c1, #a5c7ff, #ffffff);
+            color: #333;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .text-box {
+            background: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+
+        .image-upload-btn {
+            background-color: #4b6cb7;
+            color: white;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .image-preview {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+
+        #loading-message {
+            text-align: center;
+            font-size: 16px;
+            color: #888;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menu-laterale">
+        <ul>
+            <li><a href="post.html">Post</a></li>
+            <li><a href="profilo.html">Profilo</a></li>
+            <li><a href="amici.html">Amici</a></li>
+        </ul>
+    </nav>
+
+    <main id="post-container">
+        <script>
+            
+function handleImageUpload(postNumber) {
+    const input = document.getElementById(`image-upload-input-${postNumber}`);
+    const preview = document.getElementById(`image-preview-${postNumber}`);
+    
+    input.addEventListener('change', () => {
+        const file = input.files[0];
+
+        if (file) {
+            const reader = new FileReader();
+
+            reader.onload = (e) => {
+                preview.src = e.target.result;
+            };
+
+            reader.readAsDataURL(file);
+        }
+    });
+}
+
+handleImageUpload(1);
+handleImageUpload(2);
+handleImageUpload(3);
+
+            handleImageUpload(1);
+            handleImageUpload(2);
+            handleImageUpload(3);
+        </script>
+
+        <div class="post">
+            <div class="text-box">
+                <h2>Titolo del Post 1</h2>
+                <p>Qui inserisci la spiegazione del post e altre informazioni.</p>
+                <label for="image-upload-input-1" class="image-upload-btn">Carica Immagine</label>
+                <input type="file" id="image-upload-input-1" class="image-upload-input" accept="image/*">
+                <img id="image-preview-1" class="image-preview" alt="Anteprima Immagine">
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="text-box">
+                <h2>Titolo del Post 2</h2>
+                <p>Qui inserisci la spiegazione del post e altre informazioni.</p>
+                <label for="image-upload-input-2" class="image-upload-btn">Carica Immagine</label>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    
+    <title>Accedi - App VIVO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="/cliccaqui.html" method="post">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Accedi">
+    </form action="cliccaqui.html"
+    method="post">
+    <form>
+    <p><a href="recuperaccount.html">Recupera Account</a></p>
+    <p><a href="recuperaccount.html" id="recoverAccountLink">Recupera Account Dopo Limite Tentativi</a></p>
+
+    <script>
+
+        function redirectToRecoverAccount() {
+            window.location.href = 'recuperaccount.html';
+        }
+
+        document.getElementById('recoverAccountLink').addEventListener('click', redirectToRecoverAccount);
+    </script>
+</body>
+</html>

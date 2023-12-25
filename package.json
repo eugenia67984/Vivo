@@ -1,0 +1,23 @@
+{
+  "name": "viv0",
+  "version": "1.0.0",
+  "description": "\"VIVO è un'app educativa che offre oltre 30 categorie di curiosità. ciascuna ricca di migliaia di fatti interessanti. Esplora argomenti come musica, film, viaggi, astronomia, cucina e altro ancora. Arricchisci la tua conoscenza e connettiti con altre persone attraverso l'apprendimento interattivo.\"",
+  "main": "home.html",
+  "scripts": {
+    "start": "node --inspect=0.0.0.0:9229 app.js"
+  },
+  "keywords": [
+    "\"apprendimento\"",
+    "\"curiosità\"",
+    "interattività\"",
+    "\"divertimento\""
+  ],
+  "author": "Eugenia Prevato",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "express": "^4.18.2",
+    "googleapis": "^129.0.0",
+    "nodemailer": "^6.9.7"
+  }
+}

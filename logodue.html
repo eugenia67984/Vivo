@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo - App VIVO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background: #4b6cb7;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .logo-container {
+            background: #ff9cb3;
+            border-radius: 50%;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            font-size: 80px;
+            color: #fff;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .flame {
+            color: black;
+            position: relative;
+            margin-right: 8px;
+        }
+
+        .fire-icon::before,
+        .fire-icon::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 40px;
+            border-radius: 50px 50px 0 0;
+            z-index: -1;
+        }
+
+        .app-name {
+            font-size: 50px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <div class="logo">
+            <i class="fas fa-fire flame"></i>
+            <div class="fire-icon"></div>
+        </div>
+    </div>
+    <div class="app-name">VIVO</div>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = 'registrazione.html';
+        }, 1000);
+    </script>
+</body>
+</html>
